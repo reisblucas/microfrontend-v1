@@ -1,0 +1,8 @@
+.navbarContainer {
+  background-color: rgb(85, 164, 118);
+  padding: 1rem;
+}
+
+.navlink:hover {
+  background-color: rgb(183, 183, 183);
+}
