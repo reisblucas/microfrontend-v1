@@ -28,7 +28,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className={styles.mainContainer}>{children}</main>
           <Footer />
         </div>
-        H H
       </div>
     </div>
   )
