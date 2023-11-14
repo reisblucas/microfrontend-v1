@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       This is a CLIENT Router Pages MF
-      <button onClick={() => Router.push('/client-profile')}></button>
+      <button onClick={() => Router.push('/client-profile')}>Go to client profile</button>
     </>
   )
 }
