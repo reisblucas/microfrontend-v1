@@ -1,6 +1,6 @@
+/** @type {import('next').NextConfig} */
 const NextFederationPlugin = require('@module-federation/nextjs-mf')
 
-/** @type {import('next').NextConfig} */
 const remotes = (isServer) => {
   const location = isServer ? 'ssr' : 'chunks'
   return {
@@ -19,7 +19,6 @@ const nextConfig = {
         remotes: remotes(isServer)
       })
     )
-
     return config
   }
 }

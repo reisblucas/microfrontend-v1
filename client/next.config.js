@@ -5,7 +5,7 @@ const nextConfig = {
   webpack(config) {
     config.plugins.push(
       new NextFederationPlugin({
-        name: 'client-remote',
+        name: 'client',
         filename: 'static/chunks/remoteEntry.js',
         exposes: {
           './Client': './src/app/page.tsx',
