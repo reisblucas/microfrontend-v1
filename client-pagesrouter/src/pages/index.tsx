@@ -1,16 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Router from 'next/router'
+import { useRouter } from 'next/navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const router = useRouter()
+
   return (
     <>
       This is a CLIENT Router Pages MF
-      <button onClick={() => Router.push('/client-profile')}>Go to client profile</button>
+      <br />
+      <button onClick={() => router.push('/client-profile')}>Go to client profile</button>
     </>
   )
 }
