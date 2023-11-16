@@ -15,12 +15,12 @@ const nextConfig = {
       new NextFederationPlugin({
         name: 'client',
         filename: 'static/chunks/remoteEntry.js',
-        remotes: remotes(isServer),
-        exposes: {
-          './pages-map': './pages-map.js',
-          './Client': './src/pages/index.tsx',
-          './Navigation': './src/navigation'
-        }
+        remotes: remotes(isServer)
+        // exposes: {
+        //   './pages-map': './pages-map.js',
+        //   './Client': './src/pages/index.tsx',
+        //   './Navigation': './src/navigation'
+        // }
       })
     )
 
