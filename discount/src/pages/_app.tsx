@@ -11,6 +11,8 @@ interface LayoutComponent {
 
 const Layout = dynamic<LayoutComponent>(() => import('layout/Layout'), { ssr: false })
 
+// import Layout from 'layout/Layout'
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Layout navlinks={navlinks}>

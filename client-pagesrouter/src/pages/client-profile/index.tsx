@@ -1,11 +1,13 @@
-import Router from 'next/router'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 export default function ClientProfile() {
+  const router = useRouter()
+
   return (
     <div>
       CLIENT PROFILE - MF2
-      <button onClick={() => Router.push('/')}>Client Home</button>
+      <button onClick={() => router.push('/')}>Client Home</button>
     </div>
   )
 }

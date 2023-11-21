@@ -5,6 +5,7 @@ const remotes = (isServer) => {
   const location = isServer ? 'ssr' : 'chunks'
   return {
     layout: `layout@http://localhost:3000/_next/static/${location}/remoteEntry.js`
+    // layout: `layout@http://client.citizensx.com/_next/static/${location}/remoteEntry.js`
   }
 }
 
